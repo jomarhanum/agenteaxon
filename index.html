@@ -167,7 +167,7 @@
     text-decoration: none;
   }
   .nav-logo-img {
-    width: 44px; height: 44px; object-fit: contain; border-radius: 8px;
+    width: 42px; height: 42px; object-fit: contain; border-radius: 8px;
   }
   .nav-logo-text {
     font-family: 'DM Sans', sans-serif; font-weight: 600;
@@ -177,7 +177,7 @@
     line-height: 1;
   }
   .nav-menu {
-    display: flex; align-items: center; gap: 4px;
+    display: flex; align-items: center; gap: 8px;
   }
   .nav-link {
     color: rgba(244,247,250,0.65);
@@ -185,6 +185,7 @@
     font-size: 0.95rem; text-decoration: none;
     padding: 8px 14px; border-radius: 6px;
     transition: color 0.2s, background 0.2s;
+    letter-spacing: 0.01em;
   }
   .nav-link:hover { color: #F4F7FA; background: rgba(244,247,250,0.06); }
   .nav-link.active { color: #00E5FF; }
@@ -201,20 +202,15 @@
     display: none; flex-direction: column; gap: 5px;
     cursor: pointer; padding: 4px; background: none; border: none;
   }
-  .hamburger span { width: 24px; height: 2px; background: #F4F7FA; border-radius: 2px; }
+  .hamburger span { width: 24px; height: 2px; background: #F4F7FA; border-radius: 2px; transition: all 0.3s; }
   @media (max-width: 768px) {
-    .nav-menu {
-      display: none; position: fixed; top: 72px; left: 0; right: 0;
-      background: rgba(13,27,42,0.98); flex-direction: column;
-      padding: 20px 28px; border-bottom: 1px solid rgba(0,229,255,0.12);
-      gap: 4px;
-    }
+    .nav-menu { display: none; position: fixed; top: 72px; left: 0; right: 0;
+      background: rgba(13,27,42,0.98); flex-direction: column; padding: 20px 28px;
+      border-bottom: 1px solid rgba(0,229,255,0.12); gap: 4px; }
     .nav-menu.open { display: flex; }
     .hamburger { display: flex; }
     .nav-cta { width: 100%; text-align: center; margin-left: 0; margin-top: 8px; }
   }
-
-
 
   /* ── HERO ── */
   .hero {
@@ -915,10 +911,25 @@
   /* ── RESPONSIVE ── */
   @media (max-width: 768px) {
     .hero-stats { gap: 28px; }
-    .features-row, .comp-row { grid-template-columns: 1fr 1fr; }
+    .hero h1 { font-size: 2rem; }
+    /* Features: mostrar só benefícios */
+    .features-row { grid-template-columns: 1fr; }
     .features-row.header .features-cell:first-child,
-    .features-row .features-cell.tech { display: none; }
-    .pricing-card { padding: 36px 28px; }
+    .features-cell.tech { display: none; }
+    .features-cell { padding: 16px 18px; font-size: 0.95rem; line-height: 1.65; }
+    /* Comparativo: 3 colunas compactas */
+    .comp-row { grid-template-columns: 1.6fr 1fr 1.2fr; }
+    .comp-row > .comp-cell:nth-child(2) { display: none; }
+    .comp-cell { padding: 12px 8px; font-size: 0.8rem; }
+    /* Pricing */
+    .pricing-card { padding: 32px 22px; }
+    .pricing-amount { font-size: 2.4rem; }
+    /* Layouts de grid */
+    .niches-grid { grid-template-columns: 1fr; }
+    .solution-grid { grid-template-columns: 1fr; gap: 32px; }
+    .problem-grid { grid-template-columns: 1fr; }
+    /* Comparativo: esconder coluna CLT no mobile */
+    .comp-row > .comp-cell:nth-child(2) { display: none; }
   }
 
   footer { background: rgba(6,14,23,0.95); border-top: 1px solid rgba(244,247,250,0.06); padding: 48px 28px 32px; margin-top: 0; }
@@ -946,7 +957,7 @@
     <a href="contato.html" class="nav-link">Contato</a>
     <a href="contato.html" class="nav-cta">Quero o Axon</a>
   </div>
-  <button class="hamburger" id="hamburger" onclick="document.getElementById('navMenu').classList.toggle('open')">
+  <button class="hamburger" onclick="document.getElementById('navMenu').classList.toggle('open')">
     <span></span><span></span><span></span>
   </button>
 </nav>
@@ -1440,10 +1451,7 @@
       <a href="blog.html">Blog</a>
       <a href="contato.html">Contato</a>
     </div>
-    <p class="footer-copy">
-      <strong>JH Online Solutions LTDA</strong> &nbsp;·&nbsp; CNPJ: 48.194.871/0002-09 &nbsp;·&nbsp; São Paulo – SP<br>
-      <a href="mailto:contato@agenteaxon.com.br" style="color:rgba(244,247,250,0.35);text-decoration:none;">contato@agenteaxon.com.br</a> &nbsp;·&nbsp; © 2025 Todos os direitos reservados.
-    </p>
+    <p class="footer-copy"><strong>JH Online Solutions LTDA</strong> &nbsp;·&nbsp; CNPJ: 48.194.871/0002-09 &nbsp;·&nbsp; São Paulo – SP<br>© 2025 Todos os direitos reservados.</p>
   </div>
 </footer>
 
