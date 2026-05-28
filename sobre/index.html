@@ -130,6 +130,37 @@
   .cta-sobre { padding: 80px 0; background: var(--navy-mid); text-align: center; }
   .cta-sobre h2 { font-size: clamp(1.8rem,3.5vw,2.8rem); margin-bottom: 20px; }
   .cta-sobre p { font-size: 1.05rem; color: var(--ice-dim); max-width: 520px; margin: 0 auto 36px; }
+  .historia-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center; margin-top: 0; }
+  .historia-stats { background: var(--navy-mid); border: 1px solid rgba(0,229,255,0.2); border-radius: 14px; padding: 32px; }
+
+  @media (max-width: 768px) {
+    /* Hero */
+    .sobre-hero { padding: 100px 0 48px; }
+    .sobre-hero h1 { font-size: 2rem; }
+    .sobre-hero p { font-size: 1rem; }
+    /* Grid história: empilhar */
+    .historia-grid { grid-template-columns: 1fr; gap: 28px; }
+    .historia-stats { padding: 24px; }
+    /* MVV: 1 coluna */
+    .mvv-grid { grid-template-columns: 1fr; }
+    .mvv-card { padding: 24px; }
+    /* Tech: 2 colunas compactas */
+    .tech-grid { grid-template-columns: 1fr 1fr; gap: 10px; }
+    .tech-badge { padding: 14px 12px; gap: 10px; }
+    .tech-badge span { font-size: 0.78rem; }
+    /* Valores: 1 coluna */
+    .valores-grid { grid-template-columns: 1fr; gap: 20px; }
+    /* CTA */
+    .cta-sobre { padding: 56px 0; }
+    .cta-sobre div { flex-direction: column; }
+    /* Sections padding */
+    section { padding-left: 0; padding-right: 0; }
+    .container { padding: 0 20px; }
+    /* Botões em coluna no mobile */
+    .btn-row-mobile { display: flex; flex-direction: column; gap: 12px; align-items: stretch; }
+    .btn-row-mobile .btn-primary,
+    .btn-row-mobile .btn-ghost { text-align: center; }
+  }
 
 </style>
 </head>
@@ -171,13 +202,13 @@
       <span class="section-tag">Nossa história</span>
       <h2 style="font-size:clamp(1.8rem,3vw,2.6rem);margin-bottom:24px;">Criados para resolver um problema real</h2>
     </div>
-    <div style="display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;margin-top:0;" class="reveal">
+    <div class="historia-grid reveal">
       <div>
         <p style="color:var(--ice-dim);margin-bottom:20px;">Vimos dezenas de negócios investindo em tráfego pago, produto de qualidade e operação impecável — mas perdendo clientes na última milha: o atendimento no WhatsApp.</p>
         <p style="color:var(--ice-dim);margin-bottom:20px;">Os chatbots do mercado resolvem parte do problema, mas criam outro: quando o cliente faz uma pergunta fora do roteiro, o bot trava. A confiança vai embora.</p>
         <p style="color:var(--ice-dim);">O Axon foi construído do zero com uma premissa diferente: o cliente não deve perceber que está falando com uma máquina. E os resultados confirmaram que isso é possível.</p>
       </div>
-      <div style="background:var(--navy-mid);border:1px solid rgba(0,229,255,0.2);border-radius:14px;padding:32px;">
+      <div class="historia-stats">
         <div style="display:flex;flex-direction:column;gap:24px;">
           <div>
             <div style="font-family:'Rajdhani',sans-serif;font-size:2.8rem;font-weight:700;background:linear-gradient(135deg,#00E5FF,#7B2FBE);-webkit-background-clip:text;-webkit-text-fill-color:transparent;">2025</div>
@@ -283,7 +314,7 @@
     <span class="section-tag" style="display:block;">Vamos conversar?</span>
     <h2>Pronto para ter um agente com a identidade da sua empresa?</h2>
     <p>Implantação em menos de 48 horas. Sem contratar, sem treinar, sem complicação.</p>
-    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;" class="btn-row-mobile">
       <a href="/contato/" class="btn-primary">Entrar em contato</a>
       <a href="/" class="btn-ghost">Ver como funciona</a>
     </div>
