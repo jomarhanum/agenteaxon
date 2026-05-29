@@ -341,13 +341,38 @@
 <section class="newsletter-section">
   <div class="container">
     <div class="newsletter-box reveal">
-      <span class="section-tag" style="display:block;">Newsletter</span>
+      <span class="section-tag" style="display:block;">Novidades</span>
       <h3>Receba novidades sobre IA e WhatsApp</h3>
       <p>Conteúdo prático sobre automação, atendimento inteligente e estratégias de conversão. Sem spam.</p>
-      <form class="newsletter-form" action="https://formspree.io/f/XXXXXXXX" method="POST">
-        <input type="email" name="email" placeholder="seu@email.com.br" required>
-        <button type="submit">Inscrever</button>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" name="email" id="newsletterEmail" placeholder="seu@email.com.br" required>
+        <button type="submit" id="newsletterBtn">Inscrever</button>
       </form>
+      <div id="newsletterSuccess" style="display:none;margin-top:16px;color:#00C896;font-size:0.95rem;">✅ Inscrito com sucesso! Obrigado.</div>
+      <script>
+      document.getElementById('newsletterForm').addEventListener('submit', async function(e) {
+        e.preventDefault();
+        const btn = document.getElementById('newsletterBtn');
+        const email = document.getElementById('newsletterEmail').value;
+        btn.textContent = '...';
+        btn.disabled = true;
+        try {
+          const res = await fetch('https://elegantcormorant-n8n.cloudfy.live/webhook/axon-newsletter', {
+            method: 'POST',
+            headers: {'Content-Type': 'application/json'},
+            body: JSON.stringify({email, origem: 'newsletter-blog'})
+          });
+          if (res.ok) {
+            this.style.display = 'none';
+            document.getElementById('newsletterSuccess').style.display = 'block';
+          } else { throw new Error(); }
+        } catch {
+          btn.textContent = 'Inscrever';
+          btn.disabled = false;
+          alert('Erro ao inscrever. Tente novamente.');
+        }
+      });
+      </script>
     </div>
   </div>
 </section>
