@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -954,6 +955,252 @@
   <!-- AdOpt — Cookie Banner LGPD -->
   <meta name="adopt-website-id" content="abbd5dc2-5afd-4240-ac23-81acc4b4f031" />
   <script src="//tag.goadopt.io/injector.js?website_code=abbd5dc2-5afd-4240-ac23-81acc4b4f031" class="adopt-injector"></script>
+
+<!-- GEO Schema — Product + Service + FAQPage + Organization -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://www.agenteaxon.com.br/#organization",
+      "name": "JH Online Solutions LTDA",
+      "legalName": "JH Online Solutions LTDA",
+      "taxID": "48.194.871/0002-09",
+      "url": "https://www.agenteaxon.com.br",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://www.agenteaxon.com.br/axon-logo.png",
+        "width": 512,
+        "height": 512
+      },
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "telephone": "+55-11-93034-1678",
+          "contactType": "sales",
+          "areaServed": "BR",
+          "availableLanguage": "Portuguese",
+          "contactOption": "TollFree"
+        },
+        {
+          "@type": "ContactPoint",
+          "email": "contato@agenteaxon.com.br",
+          "contactType": "customer support",
+          "areaServed": "BR",
+          "availableLanguage": "Portuguese"
+        }
+      ],
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "São Paulo",
+        "addressRegion": "SP",
+        "addressCountry": "BR"
+      },
+      "sameAs": [
+        "https://www.instagram.com/agenteaxon",
+        "https://github.com/jomarhanum/agenteaxon"
+      ],
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "foundingDate": "2025",
+      "description": "Empresa especializada em automação de atendimento via WhatsApp com inteligência artificial para negócios brasileiros."
+    },
+    {
+      "@type": "Product",
+      "@id": "https://www.agenteaxon.com.br/#product",
+      "name": "Axon — Agente de IA para WhatsApp",
+      "brand": {
+        "@type": "Brand",
+        "name": "Axon"
+      },
+      "manufacturer": {
+        "@id": "https://www.agenteaxon.com.br/#organization"
+      },
+      "description": "Agente de inteligência artificial humanizado para WhatsApp. Atende clientes 24 horas por dia com memória de contexto, personalidade configurável e integração com n8n e PostgreSQL. Não é chatbot de fluxo — é IA conversacional que raciocina.",
+      "url": "https://www.agenteaxon.com.br",
+      "image": "https://www.agenteaxon.com.br/axon-logo.png",
+      "category": "Software de Automação de Atendimento",
+      "offers": {
+        "@type": "AggregateOffer",
+        "priceCurrency": "BRL",
+        "lowPrice": "249",
+        "highPrice": "2497",
+        "offerCount": "2",
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Implantação Parcelada",
+            "price": "249",
+            "priceCurrency": "BRL",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "249",
+              "priceCurrency": "BRL",
+              "unitText": "parcela",
+              "billingIncrement": 12
+            },
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.agenteaxon.com.br/contato/",
+            "seller": {"@id": "https://www.agenteaxon.com.br/#organization"}
+          },
+          {
+            "@type": "Offer",
+            "name": "Implantação à Vista",
+            "price": "2497",
+            "priceCurrency": "BRL",
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.agenteaxon.com.br/contato/",
+            "seller": {"@id": "https://www.agenteaxon.com.br/#organization"}
+          },
+          {
+            "@type": "Offer",
+            "name": "Mensalidade",
+            "price": "1497",
+            "priceCurrency": "BRL",
+            "priceSpecification": {
+              "@type": "UnitPriceSpecification",
+              "price": "1497",
+              "priceCurrency": "BRL",
+              "unitText": "mês",
+              "billingPeriod": "P1M"
+            },
+            "availability": "https://schema.org/InStock",
+            "url": "https://www.agenteaxon.com.br/contato/",
+            "seller": {"@id": "https://www.agenteaxon.com.br/#organization"}
+          }
+        ]
+      },
+      "additionalProperty": [
+        {"@type": "PropertyValue", "name": "Tempo de implantação", "value": "menos de 48 horas"},
+        {"@type": "PropertyValue", "name": "Disponibilidade", "value": "24 horas por dia, 7 dias por semana"},
+        {"@type": "PropertyValue", "name": "Fidelidade", "value": "Sem fidelidade — cancele quando quiser"},
+        {"@type": "PropertyValue", "name": "Tecnologia LLM", "value": "Google Gemini via LangChain"},
+        {"@type": "PropertyValue", "name": "Conector WhatsApp", "value": "Evolution API"},
+        {"@type": "PropertyValue", "name": "Banco de dados", "value": "PostgreSQL"},
+        {"@type": "PropertyValue", "name": "Orquestrador", "value": "n8n"}
+      ]
+    },
+    {
+      "@type": "Service",
+      "@id": "https://www.agenteaxon.com.br/#service",
+      "name": "Axon — Automação de Atendimento via WhatsApp com IA",
+      "provider": {"@id": "https://www.agenteaxon.com.br/#organization"},
+      "serviceType": "Automação de Atendimento",
+      "description": "Implantação e operação de agente de inteligência artificial humanizado para WhatsApp. O serviço inclui configuração personalizada, integração com o número WhatsApp do cliente, System Prompt com identidade da empresa, memória de contexto e suporte contínuo.",
+      "areaServed": {
+        "@type": "Country",
+        "name": "Brasil"
+      },
+      "audience": {
+        "@type": "BusinessAudience",
+        "audienceType": "Pequenas e médias empresas brasileiras",
+        "geographicArea": {"@type": "Country", "name": "Brasil"}
+      },
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Planos Axon",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Implantação Axon",
+              "description": "Configuração completa do agente de IA: System Prompt personalizado, integração WhatsApp, banco de dados, memória e testes. Prazo: até 48 horas."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Operação mensal Axon",
+              "description": "Hospedagem, manutenção, ajustes de comportamento e suporte técnico contínuo do agente de IA ativo no WhatsApp do cliente."
+            }
+          }
+        ]
+      },
+      "category": [
+        "Atendimento ao Cliente",
+        "Automação de WhatsApp",
+        "Inteligência Artificial",
+        "Chatbot Avançado"
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "@id": "https://www.agenteaxon.com.br/#faq",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "O que é o Axon e como ele funciona?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Axon é um agente de inteligência artificial para WhatsApp que usa o modelo Google Gemini via LangChain para entender e responder mensagens de forma natural. Diferente de chatbots tradicionais com fluxos fixos, o Axon raciocina sobre o contexto da conversa, lembra do histórico do cliente via PostgreSQL e responde qualquer pergunta sem travar. É implantado em menos de 48 horas e funciona 24 horas por dia."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual o preço do Axon?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A implantação do Axon custa R$ 2.497 à vista ou 12x de R$ 249. A mensalidade começa em R$ 1.497 por mês, variando conforme o nicho e volume de atendimentos. Não há fidelidade — o cliente pode cancelar a qualquer momento com 30 dias de aviso prévio."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Quanto tempo leva para o Axon entrar em funcionamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "A implantação do Axon leva menos de 48 horas após o onboarding. Não é necessário conhecimento técnico nem projeto de TI. A equipe da JH Online Solutions configura tudo — o cliente apenas fornece as informações do negócio e aprova o resultado."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "O Axon pode ser banido pelo WhatsApp?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Para atendimento receptivo — responder clientes que entram em contato — o risco de banimento é muito baixo, pois o comportamento é indistinguível de um atendimento humano. O risco aumenta em casos de disparos em massa para listas frias, para os quais recomendamos a API Oficial do Meta. Em nossos projetos, não registramos nenhum banimento em contas de atendimento receptivo."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Para quais segmentos o Axon funciona?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Axon funciona para qualquer negócio que use WhatsApp para se comunicar com clientes. Temos experiência em clínicas médicas e odontológicas, delivery e restaurantes, imobiliárias e corretores, salões de beleza e estética, e-commerce, escritórios de advocacia e contabilidade. Cada agente é configurado com a personalidade e o conhecimento específico do negócio do cliente."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Como o Axon lembra das conversas anteriores?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "O Axon opera com três camadas de memória: Buffer Window Memory para o contexto imediato da conversa, PostgreSQL para persistência do histórico entre sessões, e pgvector com RAG para busca semântica em volumes altos de histórico. Isso permite que o agente reconheça clientes recorrentes e retome conversas anteriores sem que o cliente precise se repetir."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Qual a diferença entre o Axon e um chatbot tradicional?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Chatbots tradicionais seguem fluxos pré-programados e travam quando o cliente faz uma pergunta fora do roteiro. O Axon usa inteligência artificial (Google Gemini) para raciocinar sobre a intenção do cliente e responder qualquer pergunta de forma coerente, mesmo situações não previstas. Além disso, o Axon tem memória persistente, personalidade configurável e não exige manutenção de fluxos."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Tem algum custo de fidelidade ou multa por cancelamento?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Não. O Axon não tem contrato de fidelidade nem multa por cancelamento. O cliente pode encerrar o serviço a qualquer momento com 30 dias de aviso prévio por e-mail. Valores já pagos não são reembolsados, exceto em casos de falha comprovada do serviço."
+          }
+        }
+      ]
+    }
+  ]
+}
+</script>
 </head>
 <body>
 
@@ -1298,62 +1545,69 @@
       <span class="section-tag">Investimento</span>
       <h2 class="section-title">Quanto custa um funcionário de atendimento?<br>Agora compare.</h2>
     </div>
-    <div class="comparison-table reveal">
-      <div class="comp-row header">
-        <div class="comp-cell header-cell"></div>
-        <div class="comp-cell header-cell">Atendente CLT</div>
-        <div class="comp-cell header-cell">Chatbot Comum</div>
-        <div class="comp-cell header-cell axon-col">Axon ✦</div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell">Custo mensal</div>
-        <div class="comp-cell">R$ 2.500–4.000</div>
-        <div class="comp-cell">R$ 200–800</div>
-        <div class="comp-cell highlight axon-col">A partir de R$ 997/mês</div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell">Disponibilidade</div>
-        <div class="comp-cell">8h/dia, 5 dias</div>
-        <div class="comp-cell">24/7</div>
-        <div class="comp-cell highlight axon-col"><span class="check-green">✓</span> 24/7</div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell">Entende contexto</div>
-        <div class="comp-cell"><span class="check-green">✓</span> Sim</div>
-        <div class="comp-cell"><span class="check-red">✗</span> Não</div>
-        <div class="comp-cell highlight axon-col"><span class="check-green">✓</span> Sim</div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell">Lembra do cliente</div>
-        <div class="comp-cell"><span class="check-green">✓</span> Sim</div>
-        <div class="comp-cell"><span class="check-red">✗</span> Não</div>
-        <div class="comp-cell highlight axon-col"><span class="check-green">✓</span> Sim</div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell">Personalidade própria</div>
-        <div class="comp-cell"><span class="check-green">✓</span> Sim</div>
-        <div class="comp-cell"><span class="check-red">✗</span> Não</div>
-        <div class="comp-cell highlight axon-col"><span class="check-green">✓</span> Configurada para você</div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell">Escala sem custo extra</div>
-        <div class="comp-cell"><span class="check-red">✗</span> Não</div>
-        <div class="comp-cell"><span class="check-green">✓</span> Sim</div>
-        <div class="comp-cell highlight axon-col"><span class="check-green">✓</span> Sim</div>
-      </div>
-      <div class="comp-row">
-        <div class="comp-cell">Tempo para operar</div>
-        <div class="comp-cell">Semanas de treino</div>
-        <div class="comp-cell">Dias de configuração</div>
-        <div class="comp-cell highlight axon-col"><span class="check-green">✓</span> Menos de 48h</div>
-      </div>
+    <!-- Tabela semântica GEO — comparativo mastigado para IA do Google -->
+    <div class="comparison-table reveal" style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;border-radius:14px;overflow:hidden;border:1px solid rgba(0,229,255,0.15);" aria-label="Comparativo Axon vs Chatbot vs Atendente CLT">
+        <thead>
+          <tr style="background:rgba(0,229,255,0.08);">
+            <th scope="col" style="padding:18px 20px;text-align:left;font-family:'JetBrains Mono',monospace;font-size:0.78rem;color:rgba(244,247,250,0.5);letter-spacing:0.08em;font-weight:500;border-bottom:1px solid rgba(244,247,250,0.08);">Critério</th>
+            <th scope="col" style="padding:18px 20px;text-align:center;font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(244,247,250,0.7);font-weight:600;border-bottom:1px solid rgba(244,247,250,0.08);">Atendente CLT</th>
+            <th scope="col" style="padding:18px 20px;text-align:center;font-family:'DM Sans',sans-serif;font-size:0.9rem;color:rgba(244,247,250,0.7);font-weight:600;border-bottom:1px solid rgba(244,247,250,0.08);">Chatbot Comum</th>
+            <th scope="col" style="padding:18px 20px;text-align:center;font-family:'DM Sans',sans-serif;font-size:0.95rem;color:#00E5FF;font-weight:700;border-bottom:1px solid rgba(0,229,255,0.2);background:rgba(0,229,255,0.05);">Axon ✦</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:16px 20px;color:rgba(244,247,250,0.7);font-size:0.93rem;">Custo mensal</td>
+            <td style="padding:16px 20px;text-align:center;color:rgba(244,247,250,0.6);font-size:0.9rem;">R$ 2.500–4.000</td>
+            <td style="padding:16px 20px;text-align:center;color:rgba(244,247,250,0.6);font-size:0.9rem;">R$ 200–800</td>
+            <td style="padding:16px 20px;text-align:center;color:#00E5FF;font-weight:600;font-size:0.9rem;background:rgba(0,229,255,0.03);">A partir de R$ 1.497/mês</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:16px 20px;color:rgba(244,247,250,0.7);font-size:0.93rem;">Disponibilidade</td>
+            <td style="padding:16px 20px;text-align:center;color:rgba(244,247,250,0.6);font-size:0.9rem;">8h/dia, 5 dias</td>
+            <td style="padding:16px 20px;text-align:center;color:rgba(244,247,250,0.6);font-size:0.9rem;">24/7</td>
+            <td style="padding:16px 20px;text-align:center;color:#00C896;font-weight:600;font-size:0.9rem;background:rgba(0,229,255,0.03);">✓ 24/7</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:16px 20px;color:rgba(244,247,250,0.7);font-size:0.93rem;">Entende contexto</td>
+            <td style="padding:16px 20px;text-align:center;color:#00C896;font-size:0.9rem;">✓ Sim</td>
+            <td style="padding:16px 20px;text-align:center;color:#FF5C7A;font-size:0.9rem;">✗ Não</td>
+            <td style="padding:16px 20px;text-align:center;color:#00C896;font-weight:600;font-size:0.9rem;background:rgba(0,229,255,0.03);">✓ Sim</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:16px 20px;color:rgba(244,247,250,0.7);font-size:0.93rem;">Lembra do cliente</td>
+            <td style="padding:16px 20px;text-align:center;color:#00C896;font-size:0.9rem;">✓ Sim</td>
+            <td style="padding:16px 20px;text-align:center;color:#FF5C7A;font-size:0.9rem;">✗ Não</td>
+            <td style="padding:16px 20px;text-align:center;color:#00C896;font-weight:600;font-size:0.9rem;background:rgba(0,229,255,0.03);">✓ Sim</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:16px 20px;color:rgba(244,247,250,0.7);font-size:0.93rem;">Personalidade própria</td>
+            <td style="padding:16px 20px;text-align:center;color:#00C896;font-size:0.9rem;">✓ Sim</td>
+            <td style="padding:16px 20px;text-align:center;color:#FF5C7A;font-size:0.9rem;">✗ Não</td>
+            <td style="padding:16px 20px;text-align:center;color:#00C896;font-weight:600;font-size:0.9rem;background:rgba(0,229,255,0.03);">✓ Configurada para você</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:16px 20px;color:rgba(244,247,250,0.7);font-size:0.93rem;">Escala sem custo extra</td>
+            <td style="padding:16px 20px;text-align:center;color:#FF5C7A;font-size:0.9rem;">✗ Não</td>
+            <td style="padding:16px 20px;text-align:center;color:#00C896;font-size:0.9rem;">✓ Sim</td>
+            <td style="padding:16px 20px;text-align:center;color:#00C896;font-weight:600;font-size:0.9rem;background:rgba(0,229,255,0.03);">✓ Sim</td>
+          </tr>
+          <tr>
+            <td style="padding:16px 20px;color:rgba(244,247,250,0.7);font-size:0.93rem;">Tempo para operar</td>
+            <td style="padding:16px 20px;text-align:center;color:rgba(244,247,250,0.6);font-size:0.9rem;">Semanas de treino</td>
+            <td style="padding:16px 20px;text-align:center;color:rgba(244,247,250,0.6);font-size:0.9rem;">Dias de configuração</td>
+            <td style="padding:16px 20px;text-align:center;color:#00C896;font-weight:600;font-size:0.9rem;background:rgba(0,229,255,0.03);">✓ Menos de 48h</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
 
     <div class="pricing-card-wrap reveal">
       <div class="pricing-card">
         <div class="pricing-badge">Plano de Implantação</div>
-        <div class="pricing-amount">12x de R$ 397</div>
-        <div class="pricing-from">ou R$ 3.970 à vista &nbsp;·&nbsp; mensalidade a partir de R$ 997/mês — personalizado por nicho e volume</div>
+        <div class="pricing-amount">12x de R$ 249</div>
+        <div class="pricing-from">ou R$ 2.497 à vista &nbsp;·&nbsp; mensalidade a partir de R$ 1.497/mês — personalizado por nicho e volume</div>
         <div class="pricing-includes">
           <div class="pricing-item"><span class="pricing-item-check">✓</span> Implantação completa e configuração do agente</div>
           <div class="pricing-item"><span class="pricing-item-check">✓</span> Personalização total: nome, tom, regras e base de conhecimento</div>
