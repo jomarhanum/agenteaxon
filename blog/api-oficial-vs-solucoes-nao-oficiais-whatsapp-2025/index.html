@@ -561,61 +561,67 @@
 
   <h2>Comparativo direto</h2>
 
-  <div class="art-table">
-    <div class="art-table-header">
-      <div class="art-table-cell">Critério</div>
-      <div class="art-table-cell">API Oficial</div>
-      <div class="art-table-cell">Z-API</div>
-      <div class="art-table-cell">Evolution API</div>
-    </div>
-    <div class="art-table-row">
-      <div class="art-table-cell">Custo mensal</div>
-      <div class="art-table-cell t-yellow">Por mensagem</div>
-      <div class="art-table-cell t-yellow">~R$ 70–300</div>
-      <div class="art-table-cell highlight t-green">Gratuito</div>
-    </div>
-    <div class="art-table-row">
-      <div class="art-table-cell">Risco de ban</div>
-      <div class="art-table-cell t-green">Zero</div>
-      <div class="art-table-cell t-yellow">Baixo-médio</div>
-      <div class="art-table-cell highlight t-yellow">Baixo (c/ aquecimento)</div>
-    </div>
-    <div class="art-table-row">
-      <div class="art-table-cell">Tempo de setup</div>
-      <div class="art-table-cell t-red">Dias a semanas</div>
-      <div class="art-table-cell t-green">Horas</div>
-      <div class="art-table-cell highlight t-green">Horas</div>
-    </div>
-    <div class="art-table-row">
-      <div class="art-table-cell">Self-hosted</div>
-      <div class="art-table-cell t-red">Não</div>
-      <div class="art-table-cell t-red">Não</div>
-      <div class="art-table-cell highlight t-green">Sim</div>
-    </div>
-    <div class="art-table-row">
-      <div class="art-table-cell">Multi-instância</div>
-      <div class="art-table-cell t-green">Sim</div>
-      <div class="art-table-cell t-yellow">Limitado</div>
-      <div class="art-table-cell highlight t-green">Ilimitado</div>
-    </div>
-    <div class="art-table-row">
-      <div class="art-table-cell">Integração n8n</div>
-      <div class="art-table-cell t-yellow">Manual</div>
-      <div class="art-table-cell t-yellow">Parcial</div>
-      <div class="art-table-cell highlight t-green">Nativa</div>
-    </div>
-    <div class="art-table-row">
-      <div class="art-table-cell">Botões interativos</div>
-      <div class="art-table-cell t-green">Sim</div>
-      <div class="art-table-cell t-red">Não</div>
-      <div class="art-table-cell highlight t-red">Não</div>
-    </div>
-    <div class="art-table-row">
-      <div class="art-table-cell">Suporte oficial</div>
-      <div class="art-table-cell t-green">Meta</div>
-      <div class="art-table-cell t-yellow">Provedor</div>
-      <div class="art-table-cell highlight t-yellow">Comunidade</div>
-    </div>
+  <div style="overflow-x:auto;margin:36px 0;">
+    <table style="width:100%;border-collapse:collapse;border-radius:12px;overflow:hidden;border:1px solid rgba(123,47,190,0.2);font-size:0.92rem;" aria-label="Comparativo API Oficial WhatsApp vs Z-API vs Evolution API">
+      <thead>
+        <tr style="background:rgba(123,47,190,0.18);">
+          <th scope="col" style="padding:14px 16px;text-align:left;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#00E5FF;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;border-right:1px solid rgba(244,247,250,0.05);">Critério</th>
+          <th scope="col" style="padding:14px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#00E5FF;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;border-right:1px solid rgba(244,247,250,0.05);">API Oficial</th>
+          <th scope="col" style="padding:14px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#00E5FF;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;border-right:1px solid rgba(244,247,250,0.05);">Z-API</th>
+          <th scope="col" style="padding:14px 16px;text-align:center;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#00E5FF;letter-spacing:0.08em;text-transform:uppercase;font-weight:600;">Evolution API</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr style="border-top:1px solid rgba(244,247,250,0.06);">
+          <td style="padding:14px 16px;color:rgba(244,247,250,0.8);border-right:1px solid rgba(244,247,250,0.05);">Custo mensal</td>
+          <td style="padding:14px 16px;text-align:center;color:#FFD166;border-right:1px solid rgba(244,247,250,0.05);">Por mensagem</td>
+          <td style="padding:14px 16px;text-align:center;color:#FFD166;border-right:1px solid rgba(244,247,250,0.05);">~R$ 70–300</td>
+          <td style="padding:14px 16px;text-align:center;color:#00C896;font-weight:600;">Gratuito</td>
+        </tr>
+        <tr style="border-top:1px solid rgba(244,247,250,0.06);">
+          <td style="padding:14px 16px;color:rgba(244,247,250,0.8);border-right:1px solid rgba(244,247,250,0.05);">Risco de ban</td>
+          <td style="padding:14px 16px;text-align:center;color:#00C896;border-right:1px solid rgba(244,247,250,0.05);">Zero</td>
+          <td style="padding:14px 16px;text-align:center;color:#FFD166;border-right:1px solid rgba(244,247,250,0.05);">Baixo-médio</td>
+          <td style="padding:14px 16px;text-align:center;color:#FFD166;font-weight:600;">Baixo (c/ aquecimento)</td>
+        </tr>
+        <tr style="border-top:1px solid rgba(244,247,250,0.06);">
+          <td style="padding:14px 16px;color:rgba(244,247,250,0.8);border-right:1px solid rgba(244,247,250,0.05);">Tempo de setup</td>
+          <td style="padding:14px 16px;text-align:center;color:#FF5C7A;border-right:1px solid rgba(244,247,250,0.05);">Dias a semanas</td>
+          <td style="padding:14px 16px;text-align:center;color:#00C896;border-right:1px solid rgba(244,247,250,0.05);">Horas</td>
+          <td style="padding:14px 16px;text-align:center;color:#00C896;font-weight:600;">Horas</td>
+        </tr>
+        <tr style="border-top:1px solid rgba(244,247,250,0.06);">
+          <td style="padding:14px 16px;color:rgba(244,247,250,0.8);border-right:1px solid rgba(244,247,250,0.05);">Self-hosted</td>
+          <td style="padding:14px 16px;text-align:center;color:#FF5C7A;border-right:1px solid rgba(244,247,250,0.05);">Não</td>
+          <td style="padding:14px 16px;text-align:center;color:#FF5C7A;border-right:1px solid rgba(244,247,250,0.05);">Não</td>
+          <td style="padding:14px 16px;text-align:center;color:#00C896;font-weight:600;">Sim</td>
+        </tr>
+        <tr style="border-top:1px solid rgba(244,247,250,0.06);">
+          <td style="padding:14px 16px;color:rgba(244,247,250,0.8);border-right:1px solid rgba(244,247,250,0.05);">Multi-instância</td>
+          <td style="padding:14px 16px;text-align:center;color:#00C896;border-right:1px solid rgba(244,247,250,0.05);">Sim</td>
+          <td style="padding:14px 16px;text-align:center;color:#FFD166;border-right:1px solid rgba(244,247,250,0.05);">Limitado</td>
+          <td style="padding:14px 16px;text-align:center;color:#00C896;font-weight:600;">Ilimitado</td>
+        </tr>
+        <tr style="border-top:1px solid rgba(244,247,250,0.06);">
+          <td style="padding:14px 16px;color:rgba(244,247,250,0.8);border-right:1px solid rgba(244,247,250,0.05);">Integração n8n</td>
+          <td style="padding:14px 16px;text-align:center;color:#FFD166;border-right:1px solid rgba(244,247,250,0.05);">Manual</td>
+          <td style="padding:14px 16px;text-align:center;color:#FFD166;border-right:1px solid rgba(244,247,250,0.05);">Parcial</td>
+          <td style="padding:14px 16px;text-align:center;color:#00C896;font-weight:600;">Nativa</td>
+        </tr>
+        <tr style="border-top:1px solid rgba(244,247,250,0.06);">
+          <td style="padding:14px 16px;color:rgba(244,247,250,0.8);border-right:1px solid rgba(244,247,250,0.05);">Botões interativos</td>
+          <td style="padding:14px 16px;text-align:center;color:#00C896;border-right:1px solid rgba(244,247,250,0.05);">Sim</td>
+          <td style="padding:14px 16px;text-align:center;color:#FF5C7A;border-right:1px solid rgba(244,247,250,0.05);">Não</td>
+          <td style="padding:14px 16px;text-align:center;color:#FF5C7A;font-weight:600;">Não</td>
+        </tr>
+        <tr style="border-top:1px solid rgba(244,247,250,0.06);">
+          <td style="padding:14px 16px;color:rgba(244,247,250,0.8);border-right:1px solid rgba(244,247,250,0.05);">Suporte oficial</td>
+          <td style="padding:14px 16px;text-align:center;color:#00C896;border-right:1px solid rgba(244,247,250,0.05);">Meta</td>
+          <td style="padding:14px 16px;text-align:center;color:#FFD166;border-right:1px solid rgba(244,247,250,0.05);">Provedor</td>
+          <td style="padding:14px 16px;text-align:center;color:#FFD166;font-weight:600;">Comunidade</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
 
   <h2>O risco de ban: realidade ou mito?</h2>
