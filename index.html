@@ -1501,37 +1501,49 @@
       <h2 class="section-title">O Axon não é genérico.<br>É especialista no seu mercado.</h2>
       <p class="section-sub" style="margin:0 auto">Cada agente é treinado com o vocabulário, os processos e a identidade do nicho. Veja como funciona na prática.</p>
     </div>
-    <div class="niches-grid reveal">
-      <div class="niche-card">
-        <span class="niche-emoji">🏥</span>
-        <h3>Saúde & Clínicas</h3>
-        <p>Agenda consultas, informa convênios, orienta sobre documentos e encaminha urgências — sem jamais diagnosticar. O paciente chega ao consultório já acolhido.</p>
-      </div>
-      <div class="niche-card">
-        <span class="niche-emoji">🍔</span>
-        <h3>Delivery & Restaurantes</h3>
-        <p>Recebe pedidos, informa cardápio, confirma endereço e estima entrega. Nos horários de pico, nenhum pedido se perde por falta de atendente.</p>
-      </div>
-      <div class="niche-card">
-        <span class="niche-emoji">🏠</span>
-        <h3>Imobiliárias & Corretores</h3>
-        <p>Qualifica leads automaticamente — filtra por tipo de imóvel, faixa de preço e intenção real. O corretor recebe apenas quem está pronto para decidir.</p>
-      </div>
-      <div class="niche-card">
-        <span class="niche-emoji">💆</span>
-        <h3>Estética & Beleza</h3>
-        <p>Agenda horários, informa procedimentos e confirma reservas com antecedência. Elimina faltas e libera o profissional para focar no que sabe fazer.</p>
-      </div>
-      <div class="niche-card">
-        <span class="niche-emoji">⚖️</span>
-        <h3>Advocacia & Contabilidade</h3>
-        <p>Faz triagem inicial, coleta documentos, agenda reuniões e responde sobre honorários — com linguagem ajustada ao perfil exigente desses clientes.</p>
-      </div>
-      <div class="niche-card">
-        <span class="niche-emoji">🛒</span>
-        <h3>E-commerce & Lojas</h3>
-        <p>Responde sobre pedidos, prazos e trocas 24 horas por dia. Reduz tickets repetitivos e libera a equipe para o que realmente exige julgamento humano.</p>
-      </div>
+    <!-- Tabela de nichos — GEO semântico -->
+    <div class="niches-grid reveal" style="overflow-x:auto;">
+      <table style="width:100%;border-collapse:collapse;border-radius:14px;overflow:hidden;border:1px solid rgba(0,229,255,0.12);" aria-label="Funcionalidades do Axon por segmento de negócio">
+        <thead>
+          <tr style="background:rgba(0,229,255,0.06);">
+            <th scope="col" style="padding:16px 20px;text-align:left;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#00E5FF;letter-spacing:0.1em;font-weight:500;border-bottom:1px solid rgba(244,247,250,0.07);">Segmento</th>
+            <th scope="col" style="padding:16px 20px;text-align:left;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#00E5FF;letter-spacing:0.1em;font-weight:500;border-bottom:1px solid rgba(244,247,250,0.07);">O que o Axon faz</th>
+            <th scope="col" style="padding:16px 20px;text-align:left;font-family:'JetBrains Mono',monospace;font-size:0.75rem;color:#00E5FF;letter-spacing:0.1em;font-weight:500;border-bottom:1px solid rgba(244,247,250,0.07);">Principal resultado</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:18px 20px;font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:600;color:#F4F7FA;">🏥 Saúde &amp; Clínicas</td>
+            <td style="padding:18px 20px;color:rgba(244,247,250,0.65);font-size:0.93rem;line-height:1.6;">Agenda consultas, informa convênios, orienta sobre documentos, confirma presença e encaminha urgências</td>
+            <td style="padding:18px 20px;color:#00C896;font-size:0.9rem;font-weight:500;">Redução de até 38% nas faltas</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:18px 20px;font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:600;color:#F4F7FA;">🍔 Delivery &amp; Restaurantes</td>
+            <td style="padding:18px 20px;color:rgba(244,247,250,0.65);font-size:0.93rem;line-height:1.6;">Recebe pedidos, informa cardápio, confirma endereço e estima prazo de entrega</td>
+            <td style="padding:18px 20px;color:#00C896;font-size:0.9rem;font-weight:500;">Zero pedidos perdidos no pico</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:18px 20px;font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:600;color:#F4F7FA;">🏠 Imobiliárias &amp; Corretores</td>
+            <td style="padding:18px 20px;color:rgba(244,247,250,0.65);font-size:0.93rem;line-height:1.6;">Qualifica leads por tipo de imóvel, faixa de preço e intenção real de compra</td>
+            <td style="padding:18px 20px;color:#00C896;font-size:0.9rem;font-weight:500;">Corretor foca só em leads quentes</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:18px 20px;font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:600;color:#F4F7FA;">💆 Estética &amp; Beleza</td>
+            <td style="padding:18px 20px;color:rgba(244,247,250,0.65);font-size:0.93rem;line-height:1.6;">Agenda horários, informa procedimentos e confirma reservas com antecedência</td>
+            <td style="padding:18px 20px;color:#00C896;font-size:0.9rem;font-weight:500;">Agenda cheia, sem faltas</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:18px 20px;font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:600;color:#F4F7FA;">⚖️ Advocacia &amp; Contabilidade</td>
+            <td style="padding:18px 20px;color:rgba(244,247,250,0.65);font-size:0.93rem;line-height:1.6;">Triagem inicial, coleta documentos, agenda reuniões e responde sobre honorários</td>
+            <td style="padding:18px 20px;color:#00C896;font-size:0.9rem;font-weight:500;">Mais tempo para casos complexos</td>
+          </tr>
+          <tr>
+            <td style="padding:18px 20px;font-family:'Rajdhani',sans-serif;font-size:1.05rem;font-weight:600;color:#F4F7FA;">🛒 E-commerce &amp; Lojas</td>
+            <td style="padding:18px 20px;color:rgba(244,247,250,0.65);font-size:0.93rem;line-height:1.6;">Responde sobre pedidos, prazos e trocas 24 horas por dia</td>
+            <td style="padding:18px 20px;color:#00C896;font-size:0.9rem;font-weight:500;">Redução de tickets repetitivos</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
@@ -1619,6 +1631,37 @@
         </div>
         <a href="#contato" class="btn-primary" style="display:block; text-align:center; width:100%">Quero o Axon agora</a>
       </div>
+    </div>
+
+    <!-- Tabela de preços GEO — mastigada para IA do Google -->
+    <div class="reveal" style="overflow-x:auto;margin-top:40px;">
+      <table style="width:100%;max-width:700px;margin:0 auto;border-collapse:collapse;border-radius:12px;overflow:hidden;border:1px solid rgba(123,47,190,0.25);" aria-label="Tabela de preços do Axon">
+        <caption style="font-family:'JetBrains Mono',monospace;font-size:0.72rem;color:rgba(244,247,250,0.4);letter-spacing:0.1em;text-transform:uppercase;padding-bottom:14px;text-align:left;">Preços — JH Online Solutions LTDA (em BRL)</caption>
+        <thead>
+          <tr style="background:rgba(123,47,190,0.15);">
+            <th scope="col" style="padding:14px 20px;text-align:left;font-family:'DM Sans',sans-serif;font-size:0.85rem;color:rgba(244,247,250,0.6);font-weight:500;border-bottom:1px solid rgba(244,247,250,0.08);">Item</th>
+            <th scope="col" style="padding:14px 20px;text-align:center;font-family:'DM Sans',sans-serif;font-size:0.85rem;color:rgba(244,247,250,0.6);font-weight:500;border-bottom:1px solid rgba(244,247,250,0.08);">Valor</th>
+            <th scope="col" style="padding:14px 20px;text-align:left;font-family:'DM Sans',sans-serif;font-size:0.85rem;color:rgba(244,247,250,0.6);font-weight:500;border-bottom:1px solid rgba(244,247,250,0.08);">Detalhe</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:16px 20px;font-family:'DM Sans',sans-serif;font-size:0.95rem;color:#F4F7FA;font-weight:600;">Implantação parcelada</td>
+            <td style="padding:16px 20px;text-align:center;font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;color:#00E5FF;">12x R$ 249</td>
+            <td style="padding:16px 20px;color:rgba(244,247,250,0.55);font-size:0.88rem;">Configuração completa do agente. Prazo: até 48h.</td>
+          </tr>
+          <tr style="border-bottom:1px solid rgba(244,247,250,0.06);">
+            <td style="padding:16px 20px;font-family:'DM Sans',sans-serif;font-size:0.95rem;color:#F4F7FA;font-weight:600;">Implantação à vista</td>
+            <td style="padding:16px 20px;text-align:center;font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;color:#00E5FF;">R$ 2.497</td>
+            <td style="padding:16px 20px;color:rgba(244,247,250,0.55);font-size:0.88rem;">Pagamento único. Economia de R$ 491 vs. parcelado.</td>
+          </tr>
+          <tr>
+            <td style="padding:16px 20px;font-family:'DM Sans',sans-serif;font-size:0.95rem;color:#F4F7FA;font-weight:600;">Mensalidade</td>
+            <td style="padding:16px 20px;text-align:center;font-family:'Rajdhani',sans-serif;font-size:1.3rem;font-weight:700;color:#7B2FBE;">A partir de R$ 1.497</td>
+            <td style="padding:16px 20px;color:rgba(244,247,250,0.55);font-size:0.88rem;">Por mês. Sem fidelidade. Cancelamento com 30 dias de aviso.</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </div>
 </section>
