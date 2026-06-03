@@ -13,6 +13,8 @@ jobs:
           fetch-depth: 0
 
       - name: Mirror para backup
+        env:
+          TOKEN: ${{ secrets.BACKUP_TOKEN }}
         run: |
-          git remote add backup https://x-access-token:${{ secrets.BACKUP_TOKEN }}@github.com/jomarhanum/agenteaxon-backup.git
-          git push backup --mirror
+          git remote add backup https://$TOKEN@github.com/jomarhanum/agenteaxon-backup.git
+          git push backup --mirror --force
