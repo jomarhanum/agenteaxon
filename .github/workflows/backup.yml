@@ -1,1 +1,18 @@
+name: Backup diário
+on:
+  schedule:
+    - cron: '0 3 * * *'
+  workflow_dispatch:
 
+jobs:
+  backup:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Mirror para backup
+        run: |
+          git remote add backup https://x-access-token:${{ secrets.BACKUP_TOKEN }}@github.com/jomarhanum/agenteaxon-backup.git
+          git push backup --mirror
