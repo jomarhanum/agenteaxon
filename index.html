@@ -920,19 +920,28 @@
     .features-row.header .features-cell:first-child,
     .features-cell.tech { display: none; }
     .features-cell { padding: 16px 18px; font-size: 0.95rem; line-height: 1.65; }
-    /* Comparativo: 3 colunas compactas */
-    .comp-row { grid-template-columns: 1.6fr 1fr 1.2fr; }
-    .comp-row > .comp-cell:nth-child(2) { display: none; }
-    .comp-cell { padding: 12px 8px; font-size: 0.8rem; }
     /* Pricing */
     .pricing-card { padding: 32px 22px; }
     .pricing-amount { font-size: 2.4rem; }
     /* Layouts de grid */
-    .niches-grid { grid-template-columns: 1fr; }
     .solution-grid { grid-template-columns: 1fr; gap: 32px; }
     .problem-grid { grid-template-columns: 1fr; }
-    /* Comparativo: esconder coluna CLT no mobile */
-    .comp-row > .comp-cell:nth-child(2) { display: none; }
+    /* ── TABELAS MOBILE ── */
+    /* Ocultar overflow das tabelas */
+    table { table-layout: fixed; }
+    /* Tabela comparativa: ocultar coluna Chatbot Comum (3ª coluna) */
+    .comparison-table th:nth-child(3),
+    .comparison-table td:nth-child(3) { display: none !important; }
+    .comparison-table th,
+    .comparison-table td { padding: 12px 10px !important; font-size: 0.82rem !important; }
+    /* Tabela de nichos: ocultar coluna Principal Resultado (3ª coluna) */
+    .niches-grid th:nth-child(3),
+    .niches-grid td:nth-child(3) { display: none !important; }
+    .niches-grid th,
+    .niches-grid td { padding: 12px 10px !important; font-size: 0.82rem !important; }
+    /* Tabela de preços: ocultar coluna Detalhe (3ª coluna) */
+    .pricing-card-wrap ~ div th:nth-child(3),
+    .pricing-card-wrap ~ div td:nth-child(3) { display: none !important; }
   }
 
   footer { background: rgba(6,14,23,0.95); border-top: 1px solid rgba(244,247,250,0.06); padding: 48px 28px 32px; margin-top: 0; }
