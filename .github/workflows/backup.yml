@@ -7,12 +7,24 @@ on:
 jobs:
   backup:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+
     steps:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - name: Mirror para backup
+      - name: Criar bundle de backup
         run: |
-          git remote add backup https://x-access-token:${{ secrets.BACKUP_TOKEN }}@github.com/jomarhanum/agenteaxon-backup.git
-          git push backup --mirror --force
+          DATE=$(date +%Y-%m-%d)
+          git bundle create agenteaxon-backup-$DATE.bundle --all
+          echo "Bundle criado: agenteaxon-backup-$DATE.bundle"
+          ls -lh agenteaxon-backup-$DATE.bundle
+
+      - name: Upload do backup como artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: agenteaxon-backup-${{ github.run_number }}
+          path: agenteaxon-backup-*.bundle
+          retention-days: 90
