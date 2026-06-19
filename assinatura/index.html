@@ -129,7 +129,6 @@
 
     <div class="toggle-wrap">
       <button class="tbtn active" onclick="setMode('mensal',this)">Mensal</button>
-      <button class="tbtn" onclick="setMode('semestral',this)">Semestral <span class="save">-10%</span></button>
       <button class="tbtn" onclick="setMode('anual',this)">Anual <span class="save">-20%</span></button>
     </div>
 
@@ -141,7 +140,7 @@
         <div class="plan-name">Plano Ouro</div>
         <div class="plan-desc">Atendimento completo via texto e mídia.</div>
         <div class="price-block">
-          <div class="price-main" id="o-price">R$ 1.497<span style="font-size:1rem;font-weight:400;color:var(--ice-dim)">/mês</span></div>
+          <div class="price-main" id="o-price">R$ 997<span style="font-size:1rem;font-weight:400;color:var(--ice-dim)">/mês</span></div>
           <div class="price-sub" id="o-sub">Cobrado mensalmente</div>
           <div class="price-econ" id="o-econ">—</div>
         </div>
@@ -154,8 +153,8 @@
           <li><span class="chk">✓</span>Disponível 24h por dia</li>
           <li><span class="chk">✓</span>Suporte técnico contínuo</li>
         </ul>
-        <a class="cta primary" id="o-btn" href="https://pay.herospark.com/plano-ouro-mensal-525405" target="_blank" rel="noopener">Assinar Plano Ouro</a>
-        <div class="link-note" id="o-link">pay.herospark.com/plano-ouro-mensal-525405</div>
+        <a class="cta primary" id="o-btn" href="https://buy.stripe.com/28E8wPcEofgo5R93rOgUM02" target="_blank" rel="noopener">Assinar Plano Ouro</a>
+        <div class="link-note" id="o-link">buy.stripe.com/28E8wPcEofgo5R93rOgUM02</div>
       </div>
 
       <!-- DIAMANTE -->
@@ -164,7 +163,7 @@
         <div class="plan-name">Plano Diamante</div>
         <div class="plan-desc">Tudo do Ouro mais processamento de mensagens em áudio.</div>
         <div class="price-block">
-          <div class="price-main" id="d-price">R$ 2.497<span style="font-size:1rem;font-weight:400;color:var(--ice-dim)">/mês</span></div>
+          <div class="price-main" id="d-price">R$ 1.497<span style="font-size:1rem;font-weight:400;color:var(--ice-dim)">/mês</span></div>
           <div class="price-sub" id="d-sub">Cobrado mensalmente</div>
           <div class="price-econ" id="d-econ">—</div>
         </div>
@@ -172,8 +171,8 @@
           <li><span class="chk">✓</span>Tudo do Plano Ouro</li>
           <li class="hi"><span class="mic">◎</span>Processamento de conversas em áudio</li>
         </ul>
-        <a class="cta" id="d-btn" href="https://pay.herospark.com/agente-axon-assinatura-525400" target="_blank" rel="noopener">Assinar Plano Diamante</a>
-        <div class="link-note" id="d-link">pay.herospark.com/agente-axon-assinatura-525400</div>
+        <a class="cta" id="d-btn" href="https://buy.stripe.com/fZu3cv7k49W40wPe6sgUM04" target="_blank" rel="noopener">Assinar Plano Diamante</a>
+        <div class="link-note" id="d-link">buy.stripe.com/fZu3cv7k49W40wPe6sgUM04</div>
       </div>
 
     </div>
@@ -185,14 +184,12 @@
   <script>
   const D = {
     o: {
-      mensal:    {p:'R$ 1.497',     ps:'/mês', sub:'Cobrado mensalmente',        econ:null,               href:'https://pay.herospark.com/plano-ouro-mensal-525405',                     note:'pay.herospark.com/plano-ouro-mensal-525405'},
-      semestral: {p:'R$ 8.083,80',  ps:'',     sub:'Total semestral (6 meses)',   econ:'Você economiza 10%', href:'https://pay.herospark.com/plano-ouro-semestral-10-de-desconto-525450',  note:'pay.herospark.com/plano-ouro-semestral-10-de-desconto-525450'},
-      anual:     {p:'R$ 14.371,20', ps:'',     sub:'Total anual (12 meses)',      econ:'Você economiza 20%', href:'https://pay.herospark.com/plano-ouro-anual-20-de-desconto-525451',      note:'pay.herospark.com/plano-ouro-anual-20-de-desconto-525451'}
+      mensal: {p:'R$ 997',      ps:'/mês', sub:'Cobrado mensalmente',   econ:null,               href:'https://buy.stripe.com/28E8wPcEofgo5R93rOgUM02', note:'buy.stripe.com/28E8wPcEofgo5R93rOgUM02'},
+      anual:  {p:'R$ 9.571,20', ps:'',     sub:'Total anual (12 meses)', econ:'Você economiza 20%', href:'https://buy.stripe.com/fZu9ATawg7NWa7pgeAgUM03', note:'buy.stripe.com/fZu9ATawg7NWa7pgeAgUM03'}
     },
     d: {
-      mensal:    {p:'R$ 2.497',     ps:'/mês', sub:'Cobrado mensalmente',        econ:null,               href:'https://pay.herospark.com/agente-axon-assinatura-525400',                note:'pay.herospark.com/agente-axon-assinatura-525400'},
-      semestral: {p:'R$ 13.483,80', ps:'',     sub:'Total semestral (6 meses)',   econ:'Você economiza 10%', href:'https://pay.herospark.com/plano-diamante-semestral-10-de-desconto-525566',note:'pay.herospark.com/plano-diamante-semestral-10-de-desconto-525566'},
-      anual:     {p:'R$ 23.971,20', ps:'',     sub:'Total anual (12 meses)',      econ:'Você economiza 20%', href:'https://pay.herospark.com/plano-diamante-anual-20-de-desconto-525567',  note:'pay.herospark.com/plano-diamante-anual-20-de-desconto-525567'}
+      mensal: {p:'R$ 1.497',     ps:'/mês', sub:'Cobrado mensalmente',   econ:null,               href:'https://buy.stripe.com/fZu3cv7k49W40wPe6sgUM04', note:'buy.stripe.com/fZu3cv7k49W40wPe6sgUM04'},
+      anual:  {p:'R$ 14.371,20', ps:'',     sub:'Total anual (12 meses)', econ:'Você economiza 20%', href:'https://buy.stripe.com/4gMbJ1cEo4BK93le6sgUM05', note:'buy.stripe.com/4gMbJ1cEo4BK93le6sgUM05'}
     }
   };
 
